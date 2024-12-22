@@ -15,7 +15,7 @@ if upload_file is not None:
     data = bytes_data.decode("utf-8")
     #st.text(data)
     df=processing.processing(data)
-    st.dataframe(df)
+    #st.dataframe(df)
     
     user_list=df["User"].unique().tolist()
     user_list.remove("Notification")
